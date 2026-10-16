@@ -1,0 +1,17 @@
+
+{
+  "name": "function-gift-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "razorpay": "^2.9.5",
+    "pdfkit": "^0.16.0"
+  }
+}

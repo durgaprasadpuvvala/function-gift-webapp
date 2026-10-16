@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Function Gift Payment</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="heart">♡</div>
+      <p class="eyebrow">A warm welcome</p>
+      <h1 id="functionName">Function Gift</h1>
+      <p>Your blessings and good wishes mean a lot to us.</p>
+    </header>
+
+    <section class="card">
+      <h2>Guest Details</h2>
+      <p class="muted">Enter your details and gift amount.</p>
+
+      <form id="giftForm">
+        <label for="guestName">Guest Name</label>
+        <input id="guestName" maxlength="120" required
+               placeholder="Enter your name">
+
+        <label for="address">Address</label>
+        <textarea id="address" maxlength="1000" required
+                  placeholder="Enter your address"></textarea>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" inputmode="tel"
+               maxlength="20" required placeholder="Phone number">
+
+        <label for="amount">Gift Amount (₹)</label>
+        <input id="amount" type="number" min="1" max="1000000"
+               step="1" required placeholder="Enter amount">
+
+        <div class="suggestions">
+          <button type="button" data-amount="101">₹101</button>
+          <button type="button" data-amount="501">₹501</button>
+          <button type="button" data-amount="1001">₹1,001</button>
+          <button type="button" data-amount="2001">₹2,001</button>
+        </div>
+
+        <button id="payButton" class="pay-button" type="submit">
+          Pay Gift Amount →
+        </button>
+        <p id="message" role="status"></p>
+        <p class="note">
+          A receipt is available after payment verification.
+        </p>
+      </form>
+    </section>
+
+    <footer>Thank you for your blessings ♡</footer>
+  </main>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

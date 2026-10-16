@@ -1,0 +1,162 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f3ff;
+  color: #211d35;
+}
+
+.container {
+  max-width: 540px;
+  padding: 20px 15px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.heart {
+  width: 55px;
+  height: 55px;
+  margin: auto auto 15px;
+  border-radius: 18px;
+  background: #5b3cc4;
+  color: white;
+  font-size: 32px;
+  display: grid;
+  place-items: center;
+}
+
+.eyebrow {
+  color: #7259c7;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: 34px;
+}
+
+.hero p:last-child,
+.muted {
+  color: #777087;
+  line-height: 1.6;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border: 1px solid #e8e2f5;
+  border-radius: 22px;
+  box-shadow: 0 12px 40px #34215c12;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #ded8eb;
+  border-radius: 11px;
+  padding: 13px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #c9bafa;
+  border-color: #7259c7;
+}
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.suggestions button {
+  border: 1px solid #e2d8ff;
+  color: #5b3cc4;
+  background: #f7f3ff;
+  border-radius: 20px;
+  padding: 9px 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pay-button {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  margin-top: 24px;
+  padding: 16px;
+  color: white;
+  background: #5b3cc4;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pay-button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+#message {
+  color: #b42318;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#message.success {
+  color: #147d4b;
+}
+
+.note {
+  text-align: center;
+  color: #8b849e;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: #8b849e;
+  font-size: 12px;
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
